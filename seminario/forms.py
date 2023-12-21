@@ -31,4 +31,5 @@ class FormInscritos(forms.ModelForm):
             'fechaInscripcion': forms.DateInput(attrs={'type': 'date'}),
             'horaInscripcion': forms.TextInput(attrs={'type': 'time'}),
             'estado': forms.Select(choices=ESTADO_CHOICES, attrs={'class': 'form_control'}),
+            'observacion': forms.Textarea(attrs={'class': 'form_control'})
         }

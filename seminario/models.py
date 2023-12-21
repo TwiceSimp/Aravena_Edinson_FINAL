@@ -20,6 +20,7 @@ class Inscritos(models.Model):
     institucion = models.ForeignKey(Instituciones, on_delete=models.CASCADE)
     horaInscripcion = models.TimeField()
     estado = models.CharField(max_length=20)
+    observacion = models.CharField(max_length=150)
 
 class DatosAutor(models.Model):
     id = models.AutoField(primary_key=True)
